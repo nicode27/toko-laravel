@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\produkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,15 @@ use Illuminate\Support\Facades\Route;
 // }
 // );
 
+// Tambahkan Route ini agar URL /produk memanggil fungsi index di ProdukController
+Route::get('/produk', [produkController::class, 'index']); //
+
 // Untuk mengirim 
 Route::post('/store', function(){
     return "Data berhasil ditambahkan ke store dummy masuk database";
 });
+
+Route::get('/produk/{id}', [produkController::class, 'show']);
+
+Route::post('/produk', [produkController::class, 'store']);
+
