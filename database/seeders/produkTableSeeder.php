@@ -23,7 +23,7 @@ class produkTableSeeder extends Seeder
         $brg = new Barang;
         $brg->insert (
             array (
-                ['nama' => 'Piring','id_kategori'=> '1', 'qty' => '12','harga_beli' => 
+                ['nama' => 'Gelas Kaca','id_kategori'=> '3', 'qty' => '15','harga_beli' => 
                 '50000', 'harga_jual' => '540000'],
                 ['nama' => 'Sendok','id_kategori'=> '1', 'qty' => '12','harga_beli' => 
                 '40000', 'harga_jual' => '450000']
