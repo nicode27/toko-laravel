@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KaryawanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\produkController;
 use App\Http\Controllers\ProfilController;
@@ -78,3 +79,7 @@ Route::get('/produk', [produkController::class, 'index']);
 
 // Tambahkan Route baru:
 Route::get('/profil', [ProfilController::class, 'info']);
+
+Route::get('/pegawai', [KaryawanController::class, 'index']);
+
+Route::resource('/karyawan',KaryawanController::class);
