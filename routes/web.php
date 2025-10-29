@@ -4,6 +4,7 @@ use App\Http\Controllers\KaryawanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\produkController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\AbsensKaryawanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -83,3 +84,5 @@ Route::get('/profil', [ProfilController::class, 'info']);
 Route::get('/pegawai', [KaryawanController::class, 'index']);
 
 Route::resource('/karyawan',KaryawanController::class);
+
+Route::resource('/absensKaryawan',AbsensKaryawanControllerr::class);
