@@ -19,7 +19,7 @@ public function index()
     $absensi = absensKaryawan::with('karyawan')->get();
 
     // BENAR: Tambahkan ; di akhir dan pindahkan }
-    return view('absensikaryawan.index', compact('absensi'));
+    return view('absensiKaryawan.index', compact('absensi'));
 }
     /**
      * Show the form for creating a new resource.
